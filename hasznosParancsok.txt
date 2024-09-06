@@ -1,0 +1,24 @@
+PARTÍCIÓKRA TÖREDEZETT MEGHAJTÓ
+diskpart
+list disk
+select disk [NUMBER]
+clean
+create partition primary
+format fs=ntfs quick
+active
+assign
+list disk
+exit
+
+WINDOWS/OFFICE AKTIVÁLÁS
+irm https://massgrave.dev/get | iex
+
+WIFI JELSZÓ
+netsh wlan show profile [NAME] key=clear
+
+
+PROGRAM FRISSÍTÉS
+winget upgrade --all
+
+RENDSZER ELLENŐRZÉS
+sfc /scannow
